@@ -36,10 +36,19 @@ The code then adds two columns to the "values" dataset: activity, and subject, w
 
 The code then creates an independent, tidy data set with the average of all measurements by activity and subject.  To that end, the code creates an interaction of factors "subject" and "activity", which is used to split the "values" dataframe "values" and then use the sapply function to compute the average for each of the 66 variables (measurements).  
 
-Some final cleaning up is necessary to create a tidy dataset.  These final steps are described as comments in the "run_analysis.R" code, as comments.   The code then creates a tidy datset file named "dat.csv" 
+Some final cleaning up is necessary to create a tidy dataset.  These final steps are described as comments in the "run_analysis.R" code, as comments.   The code then creates a tidy datset file named "dat.txt" 
 
-This "dat.csv"" file is a tidy data set containing the following columns: "subject", "activity", and then 66 columns (containing the average of each of the 66 variables that we were asked to include in the file).  All column names are in lower case letters, and do not contain any spaces or special characters, and are indicative of the variable name.  For example, column 3 name is: 
+This "dat.txt"" file is a tidy data set containing the following columns: "subject", "activity", and then 66 columns (containing the average of each of the 66 variables that we were asked to include in the file).  All column names are in lower case letters, and do not contain any spaces or special characters, and are indicative of the variable name.  For example, column 3 name is: 
 
 tbodyaccmeanx
 
 This means the average value of the measurement " tBodyAcc-mean()-X" in the original data set.  This average value is computed as the average for each subject, and for each activity, as indicated in columns 1 and 2 of the tidy data set.    
+
+
+
+
+
+
+
+
+
