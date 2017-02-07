@@ -26,7 +26,7 @@ The code "run_analysis.R" reads the data from the following original files:
 
 Similar datasets are contained in "./ucidata/train/X_train.txt", "./ucidata/train/y_train.txt", and "./ucidata/train/subject_train.txt", with the difference that each of them has 7,352 rows (instead of 2,947).  
 
-The code "run_analysis.R" reads the data above as ".csv" files.  It then merges all the data contained in the "train" and "test" datasets, creating the data.frames "values", "activity", and "subject"; each with 10,299 rows (i.e., 2,947 from "test" and 7,352 from "train").  The dataframe "values" contains all the 10,299 values for each of the 561 measurements.  The dataframe "activity" contains the corresponding 10,299 activities, and the dataframe "subject" contains the corresponding 10,299 subjects. 
+The code "run_analysis.R" reads the data above as ".txt" files.  It then merges all the data contained in the "train" and "test" datasets, creating the data.frames "values", "activity", and "subject"; each with 10,299 rows (i.e., 2,947 from "test" and 7,352 from "train").  The dataframe "values" contains all the 10,299 values for each of the 561 measurements.  The dataframe "activity" contains the corresponding 10,299 activities, and the dataframe "subject" contains the corresponding 10,299 subjects. 
 
 The code then keeps only variables of interest (-mean() and -std()), that is, it subsets the "values" dataset to contain only 66 variables (instead of 561).  This is done by using "grep" in the "features" dataset, which yields the indexes of the variables of interest.
 
