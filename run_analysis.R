@@ -48,5 +48,5 @@ for (i in 1:66) {
     dat <- cbind(dat,test2[i,])
 }
 colnames(dat) <- c("subject","activity",row.names(test2))
-write.csv(dat,"dat.csv",row.names = FALSE)
+write.table(dat,"dat.txt",row.names = FALSE)
 
