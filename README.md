@@ -13,7 +13,7 @@ In addition, in your working directory, you should have the main R script file n
 
 source(run_analysis.R)
 
-This will create a file named "dat.csv" in your working directory.  This .csv file is a tidy data set containing the following columns: "subject", "activity", and then 66 columns (for each of the measurements that we were asked to include in the file).  All column names are in lower case letters, and do not contain any spaces or special characters, and are indicative of the measurement name.  For example, column 3 name is: 
+This will create a file named "dat.txt" in your working directory.  This "dat.txt" file is a tidy data set containing the following columns: "subject", "activity", and then 66 columns (for each of the measurements that we were asked to include in the file).  All column names are in lower case letters, and do not contain any spaces or special characters, and are indicative of the measurement name.  For example, column 3 name is: 
 
 tbodyaccmeanx
 
@@ -26,3 +26,4 @@ tbodyaccstdx
 This means the average value of the measurement " tBodyAcc-std()-X" in the original data set.  The average value is the average for each subject, and for each activity, as indicated in columns 1 and 2 of the tidy data set.
 
 The codebook "Data_transformations.md" contains the description of the data and all transformations performed in the data.  
+
